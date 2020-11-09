@@ -1,0 +1,8 @@
+.card-list {
+    width: 85vw;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* fit into one fraction four parts so as of now 1/4 size */
+    grid-gap: 20px;
+}
