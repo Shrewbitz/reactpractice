@@ -22,7 +22,7 @@ class App extends Component {
     // .then(response => response.json())
     // .then(users => this.setState({monsters: users}))
     let x = async () => {
-      const users = await fetch('http://jsonplaceholder.typicode.com/users')
+      const users = await fetch('https://jsonplaceholder.typicode.com/users')
       const user = await users.json()
       this.setState({monsters: user})
     }
@@ -40,7 +40,7 @@ class App extends Component {
       <div className="App">
       <h1>Rolodex</h1>
       <SearchBox
-        placeholder='search monsters'
+        placeholder='search people'
         handleChange={this.handleChange}
       />
       <CardList monsters={filteredMonsters}/>
